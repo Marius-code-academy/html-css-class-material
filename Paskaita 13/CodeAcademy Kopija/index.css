@@ -1,0 +1,88 @@
+header > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+header nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+header nav a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: rgb(56, 56, 56);
+}
+
+.button {
+  border: none;
+  background-color: #1200ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+header nav > button:hover {
+  background-color: #574aff;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sectionStudents {
+  background-image: url("https://codeacademy.lt/wp-content/uploads/2021/03/sample-image.jpg");
+  padding: 0 20px 150px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sectionStudents nav {
+  display: flex;
+  justify-content: end;
+}
+
+.sectionStudents nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  padding: 15px 20px;
+  background-color: #dadada;
+  font-weight: 500;
+}
+
+.sectionStudents nav a:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.studentamsContainer {
+  margin-top: 100px;
+  width: 40%;
+  color: white;
+}
+
+.studentamsContainer h1 {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+.studentamsContainer p {
+  margin: 30px 0;
+}
+
+.studentamsContainer button {
+  background-color: white;
+  color: black;
+}
+
+.studentamsContainer button:hover {
+  color: #574aff;
+}

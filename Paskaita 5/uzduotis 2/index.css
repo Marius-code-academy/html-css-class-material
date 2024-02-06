@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: pink;
+  color: white;
+}
+
+div {
+  border: 2px solid white;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+
+}
+
+img {
+  width: 100%;
+}
+
+.section1 {
+  padding: 15px;
+}
+
+.smallerWidth {
+  width: 300px;
+}
+
+.biggerWidth {
+  width: 400px;
+}
+
+.backgroundImage {
+  background: url("https://in.canon/media/image/2023/05/19/b89bed4e21e540f985dedebe80166def_EOS+R100+RF-S18-45mm+Front+Slant.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+}

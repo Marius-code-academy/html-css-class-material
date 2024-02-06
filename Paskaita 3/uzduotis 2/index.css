@@ -1,0 +1,16 @@
+#catSection img {
+  width: 30%;
+}
+
+#catSection p {
+  text-align: justify;
+}
+
+.halfWidth {
+  width: 49%;
+  display: inline-block;
+}
+
+.fullWidth {
+  width: 100%;
+}

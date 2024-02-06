@@ -1,0 +1,23 @@
+h3,
+p {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#antrasParagrafas {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 2;
+  letter-spacing: 2px;
+  color: #aa59f157;
+}
+
+.largeText {
+  color: rgba(100, 50, 99, 0.8);
+  font-size: 32px;
+}

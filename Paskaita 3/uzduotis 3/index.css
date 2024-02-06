@@ -1,0 +1,14 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(90deg, blue, purple, red);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Shaki_Waterfall2.jpg/260px-Shaki_Waterfall2.jpg");
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+img {
+  box-shadow: 5px 5px 8px lightblue, -5px -5px 8px lightblue;
+}

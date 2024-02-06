@@ -1,0 +1,29 @@
+p {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+span p {
+  font-size: 5px;
+}
+
+span > p {
+  font-size: 100px;
+}
+
+.someClass {
+  font-size: 30px;
+  color: blue;
+}
+
+#par {
+  font-size: 20px;
+  background-color: wheat;
+}
+
+#someDiv {
+  color: red;
+}

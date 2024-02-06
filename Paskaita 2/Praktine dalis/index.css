@@ -1,0 +1,28 @@
+.logoImage {
+  width: 100px;
+  display: inline;
+}
+
+.navigation {
+  display: inline;
+}
+
+h3,
+h4 {
+  text-align: center;
+}
+/* this is some comment */
+section {
+  height: 300px;
+  border: 2px solid black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.highlighted {
+  color: aqua;
+  font-size: 20px;
+  background-color: blue;
+}

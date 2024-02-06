@@ -1,0 +1,56 @@
+.clickMeButton {
+  background-color: blue;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.clickMeButton:hover {
+  padding: 10px;
+}
+
+.textInput:focus {
+background-color: yellowgreen;
+}
+
+input:checked {
+  width: 100px;
+}
+
+input[type="text"]:disabled {
+  border: 2px solid blue;
+}
+
+input:required {
+  width: 200px;
+}
+
+input:optional {
+  width: 300px;
+}
+
+a:active {
+  color: red;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: rgb(73, 73, 60)
+}
+
+input:out-of-range {
+  border: 1px solid red;
+}
+
+input:in-range {
+  border: 3px solid green;
+}
+
+input:read-only {
+  background-color: gray;
+}

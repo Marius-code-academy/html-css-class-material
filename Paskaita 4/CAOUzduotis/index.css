@@ -1,0 +1,47 @@
+header {
+  text-align: center;
+}
+
+header img {
+  width: 150px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+header nav {
+  background-color: green;
+  padding: 15px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+h1 {
+  color: white;
+  background-color: green;
+  padding: 7px;
+}
+
+section {
+  padding: 15px;
+}
+
+section img {
+  width: 100%;
+}
+
+.aboutSection {
+  background-color: rgb(219, 219, 219);
+  padding-bottom: 30px;
+}
+
+.contactsSection {
+  background-color: rgb(205, 255, 227);
+}
+
+.marginNone {
+  margin: 0;
+}

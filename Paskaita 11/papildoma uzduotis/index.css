@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  outline: 1px solid purple;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.container div {
+  height: 200px;
+  width: 200px;
+  outline: 1px solid purple;
+}
+
+.container1 {
+  flex-wrap: wrap;
+}
+
+.container1 > .bigBox {
+  width: 400px;
+}
+
+.container4 {
+  flex-wrap: wrap;
+}
+
+.container4 .bigBox {
+  width: 250px;
+}
+
+.container4 .smallBox {
+  width: 100px;
+}
+
+.container4 .biggerBox {
+  width: 400px;
+}
+
+.container4 .shorterBox {
+  height: 100px;
+}
+
+.container4 > .column {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+}
+
+div > div {
+  background-color: blue;
+  color: white;
+  border: 1px solid black;
+  width: 90px;
+  height: 70px;
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.container1 {
+  justify-content: flex-end;
+}
+
+.container2 {
+  justify-content: center;
+}
+
+.container3 {
+  justify-content: space-between;
+}
+
+.container4 {
+  justify-content: space-around;
+}
+
+.container5 {
+  flex-wrap: wrap;
+}
+
+.container6 {
+  border: 2px solid red;
+  height: 200px;
+}
+
+.container6 > div {
+  height: unset;
+}
+
+.container7 {
+  border: 2px solid red;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container7 > div {
+  height: unset;
+}
+
+.container8 {
+  border: 2px solid red;
+  height: 200px;
+  align-items: flex-end;
+}
+
+.container8 > div {
+  height: unset;
+}
+
+.bigHeight {
+  padding-top: 20px;
+  height: 100px !important;
+}
+
+.container9 {
+  border: 2px solid red;
+  height: 200px;
+  align-items: baseline;
+}
+
+.container9 > div {
+  height: unset;
+}
+
+.container10 {
+  border: 2px solid red;
+  height: 200px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.container10 > div {
+  height: unset;
+}
+
+.container11 {
+  border: 2px solid red;
+  height: 200px;
+  align-items: center;
+}
+
+.container11 > div {
+  height: unset;
+}
+
+.goToTop {
+  align-self: flex-end;
+}
+
+.container12 {
+  border: 2px solid red;
+  height: 200px;
+  align-items: center;
+}
+
+.container12 > div {
+  height: unset;
+}
+
+.order2 {
+  order: 2;
+}
+
+.order1 {
+  order: 1;
+}
+
+.container13 {
+  border: 2px solid red;
+  height: 200px;
+  align-items: center;
+}
+
+.container13 > div {
+  height: unset;
+  width: unset;
+  flex-grow: 1;
+}
+
+.container13 > div:nth-child(2) {
+  flex-grow: 5;
+}
+
+.container14 {
+  border: 2px solid red;
+  height: 200px;
+  align-items: center;
+}
+
+.container14 > div {
+  height: unset;
+  width: unset;
+  width: 300px;
+  flex-shrink: 3;
+}
+
+.container14 > div:nth-child(2) {
+  flex-shrink: 0;
+}
+
+.container15 {
+  border: 2px solid red;
+  height: 200px;
+  align-items: center;
+}
+
+.container15 > div {
+  height: unset;
+  width: unset;
+  flex-basis: 200px;
+}
+
+.container15 > div:nth-child(2) {
+  flex-grow: 3;
+}
+
+.container15 > div:nth-child(3) {
+  flex-shrink: 0;
+}
+
+.container16 {
+  border: 2px solid red;
+  height: 200px;
+  align-items: center;
+}
+
+.container16 > div {
+  height: unset;
+  width: unset;
+  flex-basis: 200px;
+}
+
+.container16 > div:nth-child(3) {
+  flex: 2 0 300px;
+}

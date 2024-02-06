@@ -1,0 +1,16 @@
+table {
+  border-collapse: collapse;
+  border: 2px solid red;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.madonna {
+  background-color: orange;
+  color: white;
+}

@@ -1,0 +1,31 @@
+.logoImage {
+  width: 75px;
+}
+
+nav {
+  display: inline;
+  vertical-align: 150%;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.halfWidth {
+  width: 48%;
+  display: inline-block;
+}
+
+.thirdWidth {
+  width: 32%;
+  display: inline-block;
+}

@@ -1,0 +1,12 @@
+img {
+  width: 300px;
+}
+
+.googleLogo {
+  background-image: url("./photos/dykuma.jpg");
+}
+
+i {
+  font-size: 50px;
+  color: red
+}
