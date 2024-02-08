@@ -1,0 +1,44 @@
+.gridContainer div {
+  background-color: orangered;
+  color: white;
+  line-height: 300px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  grid-auto-rows: 300px;
+  gap: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .gridContainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .item1 {
+    grid-column: span 4;
+  }
+
+  .item2 {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .item1 {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .item2 {
+    grid-column: span 2;
+  }
+}

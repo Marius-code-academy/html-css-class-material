@@ -1,44 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="index.css">
-  <title>Document</title>
-</head>
-<body>
-  <header>
-    <div class="wrapper">
-      <img src="https://codeacademy.lt/wp-content/themes/codeacademy/dist/images/codeacademy-black.svg" alt="Logo">
-      <nav>
-        <a href="">Studentam</a>
-        <a href="">Karjeros Centras</a>
-        <a href="">Programos</a>
-        <a href="">IT Testas</a>
-        <a href="">Apie mus</a>
-        <a href="">Verslui</a>
-        <a href="">Kontaktai</a>
-        <a href="">EN</a>
-        <button class="button">SKAMBINTI</button>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="sectionStudents">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
       <div class="wrapper">
+        <img
+          src="https://codeacademy.lt/wp-content/themes/codeacademy/dist/images/codeacademy-black.svg"
+          alt="Logo"
+        />
         <nav>
-          <a href="">Uzt 100% finasavimas</a>
-          <a href="">destytojai</a>
-          <a href="">Kainu skaiciuokle</a>
+          <a href="">Studentam</a>
+          <a href="">Karjeros Centras</a>
+          <a href="">Programos</a>
+          <a href="">IT Testas</a>
+          <a href="">Apie mus</a>
+          <a href="">Verslui</a>
+          <a href="">Kontaktai</a>
+          <a href="">EN</a>
+          <button class="button">SKAMBINTI</button>
         </nav>
-        <div class="studentamsContainer">
-          <h1>Studentams</h1>
-          <p>Ar žengi pirmą ar kažkelintą žingsnį link tech išsilavinimo – mes tau padėsim! 👋 Programos sudarytos pagal aktualias rinkos tendencijas skirtos tiek pradedantiesiems, tiek pažengusiems studentams.</p>
-          <button class="button">PROGRAMOS</button>
-        </div>
+        <button class="burger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
-    </section>
-  </main>
-</body>
+    </header>
+    <main>
+      <section class="sectionStudents">
+        <div class="wrapper">
+          <nav>
+            <a href="">Uzt 100% finasavimas</a>
+            <a href="">destytojai</a>
+            <a href="">Kainu skaiciuokle</a>
+          </nav>
+          <div class="studentamsContainer">
+            <h1>Studentams</h1>
+            <p>
+              Ar žengi pirmą ar kažkelintą žingsnį link tech išsilavinimo – mes tau padėsim! 👋
+              Programos sudarytos pagal aktualias rinkos tendencijas skirtos tiek pradedantiesiems,
+              tiek pažengusiems studentams.
+            </p>
+            <button class="button">PROGRAMOS</button>
+          </div>
+        </div>
+      </section>
+      <section class="sectionCALive">
+        <div class="wrapper">
+          <h1>CodeAcademy gyvai</h1>
+          <p class="smallWidth genericParagraph">
+            Jaučiame ne tik savo bendruomenės, tačiau ir visos IT rinkos pulsą, todėl mūsų programos
+            yra aktualios šių dienų darbo rinkai, o dėstytojai - ne akademikai, bet specialistai
+            dirbantys Tavo būsimoje darbovietėje. 😎
+          </p>
+          <div class="gridContainer">
+            <div>
+              <h3>22 300</h3>
+              <p class="bold genericParagraph">
+                Programuotojų trūkumas Lietuvoje iki 2022 m. pagal INFOBALT
+              </p>
+            </div>
+            <div>
+              <h3>2 912 €</h3>
+              <p class="bold genericParagraph">Vidutinis programuotojų atlyginimas Lietuvoje</p>
+            </div>
+            <div>
+              <h3>1 298</h3>
+              <p class="bold genericParagraph">Šiuo metu mokosi studentų</p>
+            </div>
+            <div>
+              <h3>Front-End</h3>
+              <p class="bold genericParagraph">Populiariausia programa</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sectionMotivation">
+        <div class="wrapper">
+          <h1>Jei galiu aš - <br> gali ir tu!</h1>
+          <p class="genericParagraph smallWidth">
+            Kas sieja buvusį pareigūną, o dabar pensininką Kęstutį, operos solistą Algirdą ir
+            buvusią statybų inžinierę Rugilę? 🤔
+          </p>
+          <button class="button">ISGIRSK ISTORIJAS!</button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

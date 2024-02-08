@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 header > .wrapper {
   display: flex;
   justify-content: space-between;
@@ -27,6 +31,7 @@ header nav a:hover {
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 header nav > button:hover {
@@ -85,4 +90,127 @@ header nav > button:hover {
 
 .studentamsContainer button:hover {
   color: #574aff;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 40px;
+}
+
+.sectionCALive {
+  padding: 20px;
+  padding-bottom: 70px;
+}
+
+.sectionCALive h1 {
+  font-size: 70px;
+}
+
+.smallWidth {
+  width: 40%;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.genericParagraph {
+  line-height: 1.5;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.gridContainer h3 {
+  font-size: 45px;
+  margin-bottom: 0;
+}
+
+.gridContainer p {
+  margin-top: 0;
+}
+
+.sectionMotivation {
+  background-image: url("https://codeacademy.lt/wp-content/uploads/2021/03/sample-image.jpg");
+  padding: 20px;
+  padding-bottom: 90px;
+  color: white;
+}
+
+.sectionMotivation h1 {
+  font-size: 70px;
+  line-height: 0.9;
+}
+
+.sectionMotivation button {
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  padding: 12px 30px;
+}
+
+@media screen and (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .sectionStudents {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
+
+  .sectionStudents nav {
+    justify-content: center;
+  }
+
+  .sectionStudents nav a {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .studentamsContainer {
+    margin-top: 0;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .studentamsContainer h1 {
+    margin-top: 0;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .sectionCALive > .wrapper > p:first-of-type {
+    width: 90%;
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .sectionMotivation br {
+    display: none;
+  }
+
+  .sectionMotivation h1 {
+    font-size: 50px;
+  }
+
+  .sectionMotivation p {
+    width: 100%;
+  }
 }
