@@ -1,0 +1,44 @@
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: rosybrown;
+  transition: background-color 2s linear , width 3s ease-in;
+  text-decoration: line-through;
+  transition-delay: 2s;
+}
+
+.box:hover {
+  background-color: burlywood;
+  width: 300px;
+  text-decoration: underline;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.5);
+    background-color: blue;
+  }
+  50% {
+    transform: scale(2);
+    background-color: green;
+  }
+  100% {
+    transform: scale(1);
+    background-color: red;
+  }
+}
+
+.animation {
+  height: 300px;
+  width: 200px;
+  background-color: lightpink;
+  animation-delay: 2s;
+  animation-timing-function: ease;
+}
+
+.animation:hover {
+  animation: pulse 3s infinite;
+}
