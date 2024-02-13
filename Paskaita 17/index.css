@@ -1,0 +1,22 @@
+.container {
+  border: 1px solid black;
+  width: 100px;
+  height: 50px;
+  overflow: auto;
+  /* overflow-x: auto; */
+}
+
+.content {
+  white-space: nowrap;
+}
+
+.wrapper {
+  width: 100px;
+  border: 1px solid black;
+}
+
+.text-container p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
