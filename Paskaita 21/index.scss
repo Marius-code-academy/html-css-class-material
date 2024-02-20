@@ -1,0 +1,60 @@
+@import "mobile.scss";
+
+$theme-color: blue;
+
+p {
+  color: $theme-color;
+}
+
+h1 {
+  background-color: $theme-color;
+}
+
+header {
+  display: flex;
+  align-items: center;
+
+  nav {
+    padding: 20px;
+
+    &:hover {
+      background-color: green;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@mixin someStyle($size) {
+  font-size: $size;
+  line-height: $size * 1.5;
+}
+
+.section {
+  @include someStyle(30px);
+}
+
+.section2 {
+  @include someStyle(40px);
+}
+
+.section3 {
+  @extend .section;
+  text-align: center;
+}
+
+$my-variable: true;
+$color-one: red;
+
+@if $my-variable == true {
+  $color-one: green;
+} @else {
+  $color-one: red;
+}
+
+.section4 {
+  color: $color-one;
+  background-color: darken(#fff, 20%);
+}

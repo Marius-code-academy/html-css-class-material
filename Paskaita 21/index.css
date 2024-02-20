@@ -1,0 +1,45 @@
+@media screen and (max-width: 500px) {
+  body {
+    background-color: red;
+  }
+}
+p {
+  color: blue;
+}
+
+h1 {
+  background-color: blue;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+header nav {
+  padding: 20px;
+}
+header nav:hover {
+  background-color: green;
+}
+header nav a {
+  text-decoration: none;
+}
+
+.section, .section3 {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.section2 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.section3 {
+  text-align: center;
+}
+
+.section4 {
+  color: green;
+  background-color: #cccccc;
+}/*# sourceMappingURL=index.css.map */
