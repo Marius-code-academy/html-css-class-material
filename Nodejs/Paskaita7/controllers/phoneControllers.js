@@ -1,4 +1,4 @@
-import Phone from "./models/Phone.js"
+import Phone from "../models/Phone.js"
 
 export async function getPhones(req, res) {
   try {
