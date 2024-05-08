@@ -25,8 +25,13 @@ export async function addNewTablet(req, res) {
 }
 
 export async function getTablets(req, res) {
+  const { page = 1, amount = 5, minPrice, maxPrice } = req.query;
   try {
-    const tablets = await Tablet.find({ brand: "xiaomi" }, { price: 0, __v: 0 });
+    const tablets = await Tablet.find({ price: {
+      $gte : minPrice,
+      $lte: maxPrice
+    } }, { __v: 0 }).sort({ brand: 1})
+      .limit(amount).skip(amount * (page - 1));
     res.json(tablets)
   } catch (error) {
     res.status(500).json({ error: error.message})
