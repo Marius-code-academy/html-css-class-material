@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import cors from "cors";
 import router from "./routes/index.js"
 
 dotenv.config();
@@ -11,6 +12,7 @@ mongoose.connect(MONGO_URI, { dbName: "techShop" }).then(() => console.log("Conn
 
 const app = express();
 
+app.use(cors())
 app.use(express.json());
 app.use(router);
 
