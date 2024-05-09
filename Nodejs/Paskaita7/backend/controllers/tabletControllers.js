@@ -7,7 +7,7 @@ export async function addNewTablet(req, res) {
     res.status(400).json({ message: "info missing in body"})
     return;
   }
-
+ // asd
   const newTablet = new Tablet({
     price,
     brand, 
