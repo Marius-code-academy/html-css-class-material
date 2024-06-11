@@ -5,5 +5,26 @@
 }
 
 img {
-  height: 400px;
+  height: 300px;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.upgrades > div {
+  cursor: pointer;
+}
+
+.upgrades > div:hover {
+ background-color: #eaeaea;
+}
+
+.grow1 {
+  flex: 1
+}
+
+.grow3 {
+  flex: 3
 }
