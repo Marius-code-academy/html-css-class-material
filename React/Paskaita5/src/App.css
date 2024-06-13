@@ -1,0 +1,35 @@
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+img {
+  height: 300px;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.upgrades > div {
+  cursor: pointer;
+}
+
+.upgrades > div:hover {
+ background-color: #eaeaea;
+}
+
+.grow1 {
+  flex: 1
+}
+
+.grow3 {
+  flex: 3
+}
+
+.symbol {
+  font-size: 100px;
+  cursor: pointer;
+}
