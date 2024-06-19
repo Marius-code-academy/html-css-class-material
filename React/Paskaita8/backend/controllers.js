@@ -53,7 +53,7 @@ export async function updateTodo(req, res) {
       todo.body = body;
     }
 
-    if (completed) {
+    if (completed !== undefined) {
       todo.completed = completed;
     }
 

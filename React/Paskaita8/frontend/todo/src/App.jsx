@@ -2,13 +2,16 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
 import TodosContainer from "./components/TodosContainer/TodosContainer";
+import TodosForm from "./components/TodosForm/TodosForm";
 
 function App() {
   const [todos, setTodos] = useState([]);
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:4000/todo")
+      .get(`${API_URL}/todo`)
       .then((response) => {
         setTodos(response.data)
       })
@@ -16,7 +19,8 @@ function App() {
   }, []);
 
   return <div>
-    <TodosContainer todos={todos} />
+    <TodosContainer setTodos={setTodos} todos={todos} />
+    <TodosForm setTodos={setTodos}/>
   </div>;
 }
 
