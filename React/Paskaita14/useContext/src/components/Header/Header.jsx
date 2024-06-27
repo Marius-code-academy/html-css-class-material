@@ -1,13 +1,11 @@
-import { useContext } from "react"
-import styles from "./Header.module.css"
-import { SettingsContext } from "../../App"
+import styles from "./Header.module.css";
+import { useSettingsContext } from "../Context/SettingsContextProvider";
 
 export default function Header() {
-
-  const { setShow } = useContext(SettingsContext);
+  const { setShow } = useSettingsContext();
 
   function handleChange(e) {
-    setShow(e.target.value)
+    setShow(e.target.value);
   }
 
   return (
@@ -18,5 +16,5 @@ export default function Header() {
         <option value="no">Dont Show</option>
       </select>
     </div>
-  )
+  );
 }

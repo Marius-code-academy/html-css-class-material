@@ -1,10 +1,8 @@
-import { useContext } from "react";
 import styles from "./PersonCard.module.css";
-import { SettingsContext } from "../../App";
+import { useSettingsContext } from "../Context/SettingsContextProvider";
 
 export default function PersonCard({ person }) {
-
-  const { show } = useContext(SettingsContext);
+  const { show } = useSettingsContext();
 
   return (
     <div className={styles.card}>

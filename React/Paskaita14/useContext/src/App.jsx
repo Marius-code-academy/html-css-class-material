@@ -1,18 +1,14 @@
-import { useState, createContext } from "react";
+import SettingsContextProvider from "./components/Context/SettingsContextProvider";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 
-export const SettingsContext = createContext();
-
 function App() {
-  const [show, setShow] = useState("show");
-
   return (
     <div>
-      <SettingsContext.Provider value={{ show, setShow }}>
-        <Header setShow={setShow} />
+      <SettingsContextProvider>
+        <Header />
         <Main />
-      </SettingsContext.Provider>
+      </SettingsContextProvider>
     </div>
   );
 }
