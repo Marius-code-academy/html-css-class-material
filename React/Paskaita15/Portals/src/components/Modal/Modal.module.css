@@ -1,0 +1,15 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(131, 220, 220, 0.522);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: white;
+  min-width: 200px;
+  min-height: 200px;
+  color: black;
+}
