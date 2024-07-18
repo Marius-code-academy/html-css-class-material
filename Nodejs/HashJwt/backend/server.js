@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import router from "./router.js";
+import cors from "cors";
 
 dotenv.config();
 
@@ -13,6 +14,7 @@ mongoose
   .catch((err) => console.log(err));
 
 const app = express();
+app.use(cors())
 app.use(express.json());
 
 app.use(router);
