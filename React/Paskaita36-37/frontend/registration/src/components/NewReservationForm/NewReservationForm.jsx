@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 export default function NewReservationForm({ onSubmit, reservationData }) {
-  const [name, setName] = useState(reservationData.name);
-  const [registrationDate, setRegistrationDate] = useState(reservationData.reservationDate);
-  const [tel, setTel] = useState(reservationData.phone);
+  const [name, setName] = useState(reservationData?.name);
+  const [registrationDate, setRegistrationDate] = useState(reservationData?.reservationDate);
+  const [tel, setTel] = useState(reservationData?.phone);
 
   async function handleOnSubmit(e) {
     e.preventDefault();
