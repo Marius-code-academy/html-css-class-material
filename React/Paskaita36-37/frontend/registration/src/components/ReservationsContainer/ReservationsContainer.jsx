@@ -7,11 +7,15 @@ const API_HOST = import.meta.env.VITE_API_HOST;
 export default function ReservationsContainer() {
   const [reservations, setReservations] = useState([]);
 
-  useEffect(() => {
+  function getReservations() {
     axios
       .get(API_HOST + "reservations")
       .then((response) => setReservations(response.data))
       .catch((err) => alert("Something went wrong"));
+  }
+
+  useEffect(() => {
+    getReservations();
   }, []);
 
   return (
@@ -21,11 +25,12 @@ export default function ReservationsContainer() {
           <th>Vardas</th>
           <th>Tel.</th>
           <th>Reservation Date</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
         {reservations.map((reservation) => (
-          <Reservation key={reservation._id} reservationData={reservation} />
+          <Reservation key={reservation._id} reservationData={reservation} refetchData={getReservations} />
         ))}
       </tbody>
     </table>
